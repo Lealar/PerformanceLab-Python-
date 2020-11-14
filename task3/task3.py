@@ -70,7 +70,7 @@ with open(time[0], 'r', encoding="utf-8") as log:
 with open('output.csv', 'w', encoding='UTF-8') as file:
     questions = [
         ["- какое количество попыток налить воду в бочку было за указанный период? - ", KolichestvoPopitok],
-        ["- какой процент ошибок был допущен за указанный период? - ", (KolichestvoOshibok / KolichestvoPopitok * 100)],
+        ["- какой процент ошибок был допущен за указанный период? - ", round((KolichestvoOshibok / KolichestvoPopitok * 100),2)],
         ["- какой объем воды был налит в бочку за указанный период? - ", KolichestvoVodiNalito],
         ["- какой объем воды был не налит в бочку за указанный период? - ", KolichestvoVodiHeNalito],
         ["- какой объем воды забрали из бочки за указанный период? -", KolichestvoZabor],
