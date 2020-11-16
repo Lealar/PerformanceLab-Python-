@@ -18,4 +18,4 @@ for i in a:
         print('Коллизий не найдено')
         break
     else:
-        print(PointX, " ", PointY, " ", PointZ)
+        print(float(PointX), " ", float(PointY), " ", float(PointZ))
